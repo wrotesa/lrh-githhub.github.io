@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 长白山</title>
+    <link rel="stylesheet" href="css/login.css">
+	<script src="js/all.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div id="re_index">
+    			<a href="index.html?login=null">返回首页</a>
+    			<p>账号：123456</p>
+    			<p>密码：123456</p>
+    		</div>
+    		
+    		<div id="bg" method="post" action="">
+    			<div id="tab">
+    				<ul>
+    					<li id="tab1" class="focus">密码登录</li>
+    					<li id="tab2">免密登录</li>
+    				</ul>
+    			</div>
+    			
+    			
+    			<div id="login_content">
+    				<div id="login1" class="=login">
+    					<form  method="post">
+    						<input type="text" name="username" id="username" placeholder="手机号/邮箱/用户名" />
+    							<br>
+    							
+						<input type="password" name="password" id="password" placeholder="密码" oninput="validatePassword()" />
+    					<label id="warn">　</label>
+    					
+    					<span><a href="#">忘记密码?</a></span>
+    					<input type="button" name="submit" id="submit" value="登录" />
+    					</form>
+    				</div>
+    				<div id="login2" class="=login">
+    					<form  method="post">
+    							<input type="text" name="phone" id="phone" placeholder="手机号" />
+    									<br>
+    							<div id="input_code">
+    								<input type="text" name="code" id="code" placeholder="输入六位短信验证码"/>
+    								<a href="#">获取验证码</a>
+    							</div>
+    							
+    							<br>
+    							<input type="button" name="submit2" id="submit2" value="登录" />
+    					
+    					</form>
+    				</div>
+    				
+    			</div>
+    			
+    			<div id="login_footer">
+    				<span>第三方登录</span>
+    				<ul>
+    					<li><i id="icon1" class="icon"></i></li>
+    					<li><i id="icon2" class="icon"></i></li>
+    					<li><i id="icon3" class="icon"></i></li>
+    				</ul>
+    			</div>
+    			
+    			<span id="reg">
+    				没有账号？<a href="register.html">立即注册</a>
+    			</span>
+    		</div>
+    	</body>
+    </html>

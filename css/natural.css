@@ -1,0 +1,140 @@
+
+
+
+
+body {
+    font-family: 'Microsoft YaHei', sans-serif; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #fff; 
+}
+
+/* 页面背景颜色调整 */
+body {
+    background-color: #f8f8f8; 
+}
+
+/* 导航栏样式调整 */
+.vertical-nav {
+    background-color: #4CAF50; 
+}
+
+.vertical-nav li a {
+    color: #fff; 
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.vertical-nav {
+    width: 20%; 
+    background-color: rgba(163, 174, 175, 0.5);
+    position: sticky;
+    top: 0;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.vertical-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: transform 0.3s, background-color 0.3s; /* 添加过渡效果，使得放大平滑进行 */
+}
+
+.vertical-nav li a:hover {
+    background-color: #555; /* 保持原有的背景颜色变化 */
+    transform: scale(1.2); /* 放大效果，1.05表示放大至原来的105% */
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .photo {
+            width: calc(33% - 2rem); /* 调整图片宽度以适应不同屏幕 */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+		
+		#re_index{
+			padding: 20px 20px;
+		}
+		
+		
+		section h2 {
+		    border-bottom: 1px solid #ccc; 
+		    padding-bottom: 10px; 
+		    margin-bottom: 20px; 
+		}
+		
+		.fullscreen-bg {
+		    position: fixed; /* 固定定位，使背景覆盖整个视口 */
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    background-image: url('../img/22.webp');
+		    background-position: center center; 
+		    background-repeat: no-repeat; 
+		    background-size: cover; 
+		    z-index: -1; 
+		}
+		
+		footer {
+		    
+		    background-color: transparent;
+		    color: #ffffff; 
+		    padding: 20px;
+		    text-align: center;
+		    font-size: 14px;
+		    border-top: 1px solid rgba(255, 255, 255, 0.2);
+		}
+		
+		.footer-content p {
+		    margin-bottom: 10px;
+		}
+		
+		.social-media {
+		    display: inline-block;
+		    margin-top: 10px;
+		}
+		
+		.social-media a {
+		    color: #fff;
+		    margin: 0 5px;
+		    text-decoration: none;
+		}
+		
+		.social-media i {
+		    font-size: 1.2em;
+		}
+		
+		@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+		

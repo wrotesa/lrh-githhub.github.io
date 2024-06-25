@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+	overflow: hidden;
+	background-image: url('../img/背景图.webp');
+	background-size: cover; 
+}
+
+
+
+.back-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.profile-container {
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px;
+	width: 400px; 
+	max-width: 10000px; 
+	margin: 0 auto; 
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+}
+
+.info {
+    margin-top: 20px;
+}
+.audio-player {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}

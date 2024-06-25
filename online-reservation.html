@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特色住宿</title>
+    <link rel="stylesheet" href="css/online-reservation.css"> <!-- 引入外部CSS -->
+    <script src="js/online-reservation.js" defer></script> <!-- 引入外部JS -->
+	<link rel="icon" href="img/13.jpg" sizes="32x32">
+
+	</head>
+	<body>
+    <header>
+        <div class="header-content">
+			<div class="return-button-container">
+			    <a href="index.html" class="return-button"><i class="fas fa-chevron-left"></i>返回主页</a>
+			</div>
+			<div class="logo-container">
+			    <img src="img/13.jpg" alt="Logo" class="header-logo">
+				<img src="img/14.jpg" class="header-logo"/>
+			</div>
+            
+			 <div class="search-container">
+			                <input type="search" id="search-input" placeholder="搜索...">
+			                <button type="submit" id="search-btn">搜索</button>
+			            </div>
+            <div class="date-time">
+                <span id="currentDateTime"></span>
+            </div>
+            <img src="img/时间.jpg" alt="Header Image" class="header-image">
+        </div>
+    </header>
+		<main>
+			
+			<section id="online-reservation" class="reservation-section">
+			    <h2>在线预订</h2>
+			    <form action="submit-reservation.php" method="post">
+					<img src="img/欢迎.jpg" alt="欢迎来到长白山" class="form-image">
+					
+								
+						<div class="reservation-form__item">
+						        <label for="date">选择日期:</label>
+						        <input type="date" id="date" name="date" required>
+					    
+						<label for="time">选择时间:</label>
+			            <select id="time" name="time" required>
+			                <option value="">请选择时间</option>
+			                <option value="morning">上午</option>
+			                <option value="afternoon">下午</option>
+			                <option value="evening">晚上</option>
+			            </select>
+						
+						<label for="ticket-type">票种选择:</label>
+			            <select id="ticket-type" name="ticket-type" required>
+			                <option value="">请选择票种</option>
+			                <option value="adult">成人票</option>
+			                <option value="child">儿童票</option>
+			                <option value="senior">老年票</option>
+			            </select>
+						
+						<label for="quantity">数量:</label>
+			            <input type="number" id="quantity" name="quantity" min="1" required>
+						</div>
+						
+			            <div class="reservation-form__item">
+						<label for="name">姓名:</label>
+			            <input type="text" id="name" name="name" required>
+						
+						<label for="email">邮箱:</label>
+			            <input type="email" id="email" name="email" required>
+						
+						<label for="phone">电话:</label>
+			            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+						
+						<button type="submit">提交预订</button>
+						</div>
+			        </div>
+			    </form>
+
+				
+				
+				<div class="cards-container pair">
+				    <div class="card">
+				        <div class="card-content">
+				            <h3>景区</h3>
+				            <p>长白山景区：国家AAAAA级旅游景区，主峰因白色浮石与积雪得名，有“千年积雪万年松”美誉，是中华十大名山之一。</p>
+				            <button class="book-now">查看更多</button>
+				        </div>
+						</div>
+				    <div class="card">
+				        <div class="card-content">
+				            <h3>住宿</h3>
+				            <p>长白山住宿：豪华酒店、特色民宿多样，如鲁能胜地、瑞士小镇等，环境优美，设施完善，尽享自然风光。</p>
+				            <button class="book-now">查看更多</button>
+							</div>
+				        </div>
+				    </div>
+				
+				<div class="cards-container">
+				    <div class="card">
+				        <img src="img/xipo.webp" alt="门票图片">
+				        <div class="card-content">
+							<div class="card-info">
+							<div class="price">￥214</div> <!-- 新增的价格显示 -->
+				            <h3>景区：长白山西坡景区</h3>
+				            <p>长白山西坡景区组合票(门票+大巴车往返+池西旅游班线车往返)成人票</p>
+				            <button class="book-now">在线预订</button>
+				        </div>
+						</div>
+					</div>
+				    <div class="card">
+				        <img src="img/4.webp" alt="住宿图片">
+				        <div class="card-content">
+							<div class="card-info">
+							<div class="price">￥1038</div>
+				            <h3>景区：长白山北景区</h3>
+				            <p>长白山北景区+长白山魔界漂流二日游【6人小团◆纯玩无购物◆雾凇漂流·醉美天池】</p>
+				            <button class="book-now">在线预订</button>
+							</div>
+				        </div>
+				    </div>
+					<div class="card">
+					    <img src="img/酒店4.jpg" alt="住宿图片">
+					    <div class="card-content">
+							<div class="card-info">
+							<div class="price">￥555</div>
+					        <h3>住宿：万达瑞景汉拿山温泉酒店</h3>
+					        <p>万达瑞景汉拿山温泉酒店地处长白山国际度假区的中心地带，毗邻滑雪场，绿树环绕，犹如林中仙境。
+酒店经营面积约15000平方米，是万达长白山国际度假区内一家温泉度假主题会所。有室内外天然温泉、雪乡酒楼、温泉主题客房、VIP贵宾温泉别墅等，让你悠享一站式休闲度假生活。</p>
+					        <button class="book-now">在线预订</button>
+							</div>
+					    </div>
+					</div>
+				</div>
+				
+				<div class="cards-container">
+				    <div class="card">
+				        <img src="img/北坡.jpg" alt="门票图片">
+				        <div class="card-content">
+							<div class="card-info">
+							<div class="price">￥172.5</div> <!-- 新增的价格显示 -->
+				            <h3>景区：长白山北坡景区</h3>
+				            <p>长白山北坡景区组合票(门票+大巴车往返+池北旅游班线车往返)学生票</p>
+				            <button class="book-now">在线预订</button>
+				        </div>
+						</div>
+					</div>
+				    <div class="card">
+				        <img src="img/酒店2.jpg" alt="住宿图片">
+				        <div class="card-content">
+							<div class="card-info">
+							<div class="price">￥753</div>
+				            <h3>住宿：喜来登度假酒店</h3>
+				            <p>配设了高科技沟通系统的会议室、多功能厅，适合举办会务和庆典。结束了一天的繁忙行程后，去健身中心、按摩室、桑拿浴室放松身心也是不错的选择。</p>
+				            <button class="book-now">在线预订</button>
+							</div>
+				        </div>
+				    </div>
+					<div class="card">
+					    <img src="img/酒店3.jpg" alt="住宿图片">
+					    <div class="card-content">
+							<div class="card-info">
+							<div class="price">￥842</div>
+					        <h3>住宿：长白山万达威斯汀度假酒店</h3>
+					        <p>典雅时尚的客房里有天梦之床、天梦之浴、iPhone/iPod接口、42寸纯平电视等，高智能的现代设施营造出优质的生活品味。
+知味标帜餐厅设有开放式互动厨房，可提供色香味俱全的创意美食，儿童加入“SPG童乐汇”还有自助餐福利；特色Maru餐厅供应诱人的韩国料理。大堂吧内有清冽的鸡尾酒、鲜煮咖啡，让你温暖身心。</p>
+					        <button class="book-now">在线预订</button>
+							</div>
+					    </div>
+					</div>
+				</div>
+				
+				<div class="cards-container">
+								    <div class="card">
+								        <img src="img/14.webp" alt="门票图片">
+								        <div class="card-content">
+											<div class="card-info">
+											<div class="price">￥318</div> <!-- 新增的价格显示 -->
+								            <h3>景区：长白山北坡景区</h3>
+								            <p>长白山北坡景区组合票(门票+大巴车往返+池北旅游班线车往返)+长白山魔界漂流票+长白山聚龙火山温泉票</p>
+								            <button class="book-now">在线预订</button>
+								        </div>
+										</div>
+									</div>
+								    <div class="card">
+								        <img src="img/5.webp" alt="住宿图片">
+								        <div class="card-content">
+											<div class="card-info">
+											<div class="price">￥567</div>
+								            <h3>景点：长白山北坡景区</h3>
+								            <p>长白山北坡景区组合票(门票+大巴车往返+池北旅游班线车往返)+长白山东北虎林园门票+长白山皇冠温泉票+大戏台河风景区门票</p>
+								            <button class="book-now">在线预订</button>
+											</div>
+								        </div>
+								    </div>
+									<div class="card">
+									    <img src="img/酒店3.jpg" alt="住宿图片">
+									    <div class="card-content">
+											<div class="card-info">
+											<div class="price">￥842</div>
+									        <h3>住宿：长白山万达威斯汀度假酒店</h3>
+									        <p>典雅时尚的客房里有天梦之床、天梦之浴、iPhone/iPod接口、42寸纯平电视等，高智能的现代设施营造出优质的生活品味。
+				知味标帜餐厅设有开放式互动厨房，可提供色香味俱全的创意美食，儿童加入“SPG童乐汇”还有自助餐福利；特色Maru餐厅供应诱人的韩国料理。大堂吧内有清冽的鸡尾酒、鲜煮咖啡，让你温暖身心。</p>
+									        <button class="book-now">在线预订</button>
+											</div>
+									    </div>
+									</div>
+								</div>
+								
+					<div class="cards-container">
+					    <div class="card">
+					        <img src="img/2.jpg" alt="门票图片">
+					        <div class="card-content">
+								<div class="card-info">
+								<div class="price">￥225</div> <!-- 新增的价格显示 -->
+					            <h3>景区：长白山北坡景区</h3>
+					            <p>长白山北坡景区组合票(门票+大巴车往返+池北旅游班线车往返)成人票</p>
+					            <button class="book-now">在线预订</button>
+					        </div>
+							</div>
+						</div>
+					    <div class="card">
+					        <img src="img/酒店1.jpg" alt="住宿图片">
+					        <div class="card-content">
+								<div class="card-info">
+								<div class="price">￥1190</div>
+					            <h3>住宿：凯悦酒店</h3>
+					            <p>长白山凯悦酒店位于长白山国际度假区南区冠冕街，临近长白山国际滑雪场，可尽情领略雪山壮阔的风景。</p>
+					            <button class="book-now">在线预订</button>
+								</div>
+					        </div>
+					    </div>
+						<div class="card">
+						    <img src="img/20.webp" alt="住宿图片">
+						    <div class="card-content">
+								<div class="card-info">
+								<div class="price">￥348</div>
+						        <h3>景点：长白山北坡景区</h3>
+						        <p>长白山北坡景区组合票(门票+大巴车往返+池北旅游班线车往返)+长白山猛犸象主题公园门票</p>
+						        <button class="book-now">在线预订</button>
+								</div>
+						    </div>
+						</div>
+					</div>
+				
+			</section>
+		</main>
+	</body>
+</html>

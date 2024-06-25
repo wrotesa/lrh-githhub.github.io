@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - 长白山</title>
+    <link rel="stylesheet" href="css/register.css">
+	    <script src="js/all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/reg.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="re_index">
+			<a href="index.html?login=null">返回首页</a>
+		</div>
+		<div id="bg">
+			<div id="text">
+				<h1>欢迎注册</h1>
+				<span>已有账号？</span><a href="login.html">登录</a>
+			</div>
+			<form id="reg" action="" method="">
+					<!-- 用户名 -->
+					<label>用户名　</label>
+					<input type="text" name="username" id="username" placeholder="请设置用户名" />
+					<label class="test fas" id="user_test"></label>
+				    <br>
+					<label class="warn" id="user_warn">　</label>
+					<br>
+					<!-- 手机号 -->
+					<label id>手机号　</label>
+					<input type="text" name="phone" id="phone" placeholder="可用于登录和找回密码" />
+					<label class="test fas" id="phone_test"></label>
+					<br>
+					<label class="warn" id="phone_warn">　</label>
+					<br>
+					<!-- 邮箱 -->
+					<label>邮　箱　</label>
+					<input type="text" name="email" id="email" placeholder="可用于登录和找回密码" />
+					<label class="test fas" id="email_test">　</label>
+					<br>
+					<label class="warn" id="email_warn">　</label>
+					<br>
+					<!-- 密码 -->
+					<label>密　码　</label>
+					<input type="password" name="psd1" id="psd1" placeholder="请设置登录密码" oninput="checkPasswordLength()" />
+					<label class="test fas" id="psd1_test">　</label>
+					<br>
+					<label class="warn" id="psd1_warn">　</label>
+					<br>
+					<!-- 确认密码 -->
+					<label id="psd2_text">确认密码</label>
+					<input type="password" name="psd2" id="psd2" placeholder="请再次输入登录密码" />
+					<label class="test fas" id="psd2_test">　</label>
+					<br>
+					<label class="warn" id="psd2_warn">　</label>
+					<br>
+					
+					<input type="button" name="submit" id="submit" value="注册" />
+				</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,294 @@
+        header {
+            background-color: #ffffff; 
+            padding: 1rem;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative; 
+            top: 0;
+            left: 0;
+            z-index: 100; 
+			height: 100px;
+        }
+        
+		.header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; 
+            padding: 0 2rem; 
+        }
+        
+        .date-time {
+            color: #ffffff; 
+            font-size: 1.2rem;
+            position: absolute; 
+            top: 50%; 
+            right: 0; 
+            transform: translateY(-50%); 
+            padding: 0.2rem; 
+            background-color: rgba(0, 0, 0, 0); 
+            border-radius: 0.25rem; 
+        }
+        
+        .header-image {
+            width: 150px; 
+            height: auto;
+            object-fit: cover;
+        }
+		
+        .return-button {
+            background: none;
+            border: none;
+            color: #6c757d; 
+            font-size: 0.8rem;
+            cursor: pointer;
+            display: inline-block;
+            padding: 0.3rem 0.6rem;
+            border-radius: 0.25rem;
+			transition: background-color 0.3s, color 0.3s; 
+			
+        }
+        
+        .return-button:hover {
+			background-color: #007bff; /* 鼠标悬停时的背景色 */
+			    color: white; /* 鼠标悬停时的文字颜色 */
+			    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        }
+		
+		.logo-container {
+		    display: flex;
+		    align-items: center;
+			margin-right: 300px;
+		}
+		
+		.header-logo {
+		    width: 200px; /* 调整Logo宽度 */
+		    height: auto;
+		    margin-right: 1rem; 
+		}
+		
+		@media (max-width: 767px) {
+		    .header-content {
+		        flex-direction: column;
+		        align-items: flex-start;
+		    }
+		
+		    .logo-container,
+		    .return-button-container {
+		        margin-bottom: 1rem;
+		    }
+		}
+        
+        .search-container {
+            margin-top: 1rem; /* 搜索框与返回按钮之间的间距 */
+			display: flex; 
+			align-items: center;
+			
+        }
+        
+        #search-input {
+            padding: 0.5rem;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            width: 100%; 
+            max-width: 500px; 
+            margin-right: 0.5rem; 
+			    height: 3.5rem; 
+			    font-size: 1.2rem;
+
+        }
+        
+        #search-btn {
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            margin-top: 0.5rem; 
+			height: 3.5rem; 
+			font-size: 0.8rem; 
+        }
+		main {
+		    margin-top: 10px; 
+		}
+		
+		
+		
+		.reservation-form__item {
+		    display: flex;
+		    flex-direction: column;
+		    width: calc(60% - 5px); 
+		    margin-bottom: 1rem;
+		}
+		
+		.reservation-form__item label {
+		    margin-bottom: 0.5rem;
+		}
+		
+		/* 调整表单按钮位置 */
+		.reservation-form button {
+		    width: 100%;
+		    margin-top: 1rem;
+		}
+		
+		
+		.reservation-form label,
+		.reservation-form select,
+		.reservation-form input {
+		    margin: 0;
+		}
+		
+		
+		.reservation-form label {
+		    order: 1; 
+		    margin-bottom: 0.5rem; 
+		}
+		
+		.reservation-form select,
+		.reservation-form input {
+		    order: 2; 
+		}
+		
+		
+		.reservation-form {
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-between; 
+		}
+		
+		
+		@media (min-width: 768px) { 
+		    .reservation-form__item {
+		        flex-direction: row; 
+		        align-items: center; 
+		    }
+		
+		    .reservation-form__item > * {
+		        margin-right: 10px; 
+		    }
+		
+		    .reservation-form__item:last-child > * {
+		        margin-right: 0; 
+		    }
+		}
+		
+		.reservation-form__item {
+		    border: 1px solid #9dcacc; 
+		    border-radius: 4px; 
+		    padding: 10px; 
+		}
+		
+		
+		.reservation-form__item:not(:last-child) {
+		    margin-right: -1px; 
+		}
+		
+		.reservation-form input[type="date"],
+		.reservation-form input[type="number"],
+		.reservation-form input[type="text"],
+		.reservation-form select {
+		    height: 100px; 
+		    font-size: 1.2rem; 
+		    padding: 0.5rem; 
+		}
+		
+		.form-image {
+		    float: right; 
+		    margin-left: 10px; 
+		    width: 500px; 
+		    height: auto; 
+			transition: opacity 0.3s ease-in-out;
+		}
+		
+		/* 图片效果增强 */
+		.enhanced-image {
+		    transition: opacity 0.3s ease-in-out; 
+		    border-radius: 5px; 
+		}
+		
+		.enhanced-image:hover {
+		    opacity: 0.8; 
+		}
+		
+		/* 卡片样式 */
+		.cards-container {
+		    display: flex; 
+		    justify-content: space-between; 
+		}
+		
+		.card {
+		    width: calc(50% - 10px); 
+		    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+		    border-radius: 10px; 
+		    overflow: hidden; 
+		     transition: transform 0.3s ease; 
+		    }
+			
+			.card:hover {
+			    transform: scale(1.1); 
+			}
+		
+		.card img {
+		    width: 100%; 
+		    height: auto; 
+		}
+		
+		.card-content {
+		    padding: 1rem; 
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 1rem;
+		}
+		.card-info {
+		    flex-grow: 1; 
+		}
+		
+		.book-now {
+		    display: block; 
+		    width: fit-content; 
+		    margin: 1rem auto 0; 
+		    padding: 0.5rem 1rem; 
+		    background-color: #007bff; 
+		    color: white; 
+		    border: none; 
+		    cursor: pointer; 
+		    text-align: center; 
+		    border-radius: 10px; 
+		    transition: background-color 0.3s; 
+		}
+		
+		.book-now:hover {
+		    background-color: #0056b3; 
+		}
+		
+		
+		.price {
+		    font-weight: bold; 
+		    color: #f00; 
+		    margin-bottom: 0.5rem; 
+		}
+		
+		.cards-container.pair {
+		    display: flex;
+		    justify-content: space-between;
+		}
+		
+		.cards-container.pair .card {
+		    width: calc(50% - 5px); 
+			height: 150px;
+		}
+		
+		@media (max-width: 767px) {
+		    .cards-container.pair {
+		        flex-direction: column;
+		    }
+		    .cards-container.pair .card {
+		        width: 100%;
+		        margin-bottom: 1rem;
+		    }
+		}
+		
+		
+		

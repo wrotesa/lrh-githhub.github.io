@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+html{
+	height: 100%
+}
+@font-face {
+	font-family:"myfont1";
+	
+}
+body{
+	background:url(../img/16.jpg) no-repeat;
+	/* background: #54545C; */
+	background-size:100% 110%;
+	font-family: "myfont1";
+	color: #3F3037;
+}
+#re_index{
+	padding: 20px 20px;
+}
+
+#bg{
+	/* position: relative; */
+	width: 500px;
+	height: 610px;
+	margin: -20px auto;
+	background-color: #ECECED;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	 box-shadow: 0px 0px 20px rgba(0,0,0,.5) ;
+}
+
+#bg #text{
+	margin: 30px 40px;
+}
+
+#bg h1{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+#bg a{
+	color: #4B4B4B;
+}
+
+#bg a:hover{
+	color: #3F3037;
+	text-decoration: underline;
+}
+
+#reg{
+	text-align: center;
+	margin-top: -10px;
+}
+#reg label{
+	font-size: 17px;
+}
+#reg input{
+	font-family: "myfont1";
+	margin:5px 5px;
+	padding-left: 10px;
+	height: 40px;
+	width: 250px;
+	border: 1px solid #ccc;
+}
+
+#reg #psd2_text{
+	margin-left: -5px;
+	margin-right: 5px;
+}
+#reg #submit{
+	margin: 10px 20px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5) ;
+	border: none;
+	font-size: 17px;
+	color: #FFE6C4;
+	background-color: rgba(66,47,54,.8);
+}
+
+#reg .warn{
+	font-size: 13px;
+	margin-left: 0;
+	color: red;
+}
+
+#reg .test{
+	font-size: 12px;
+	height: 5px;
+	width: 5px;
+	margin-left: 5px;
+	
+}

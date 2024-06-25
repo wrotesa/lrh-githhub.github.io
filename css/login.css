@@ -1,0 +1,194 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+html{
+	height: 100%
+}
+@font-face {
+	font-family:"myfont1";
+	src: url(../img/17.webp);
+}
+body{
+	background:url(../img/16.jpg) no-repeat;
+	/* background: #54545C; */
+	background-size:100% 110%;
+	font-family: "myfont1";
+	color: #3F3037;
+}
+#re_index{
+	padding: 20px 20px;
+}
+
+#bg{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 30px auto;
+	background-color: #ECECED;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	 box-shadow: 0px 0px 20px rgba(0,0,0,.5) ;
+}
+
+#tab{
+	width: 100%;
+	font-size: 25px;
+	/* border-right: 1px dotted black; */
+}
+#tab ul{
+	color: #4B4B4B;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+#tab li{
+	margin: 40px auto;
+}
+
+.focus{
+	color: #3F3037;
+	border-bottom: 3px solid #3F3037;
+}
+
+#login_content{
+	width: 100%;
+	height: 100%;
+}
+
+#login_content #login1{
+	width: 100%;
+	margin: 0 40px;
+	position: relative;
+	/* display: none; */
+}
+
+#login_content #login2{
+	display: none;
+}
+#login_content input{
+	font-size: 15px;
+	font-family: "myfont1";
+	border:1px solid #ccc;
+	background-color: white;
+	height: 40px;
+	width: 250px;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+#login1 #submit{
+	margin: 15px 30px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5) ;
+	border: none;
+	color: #FFE6C4;
+	background-color: rgba(66,47,54,.8);
+}
+
+#login1 input{
+	margin-left: 20px;
+	margin-bottom: 25px;
+	padding-left: 20px;
+}
+
+#login2 input{
+	margin-left: 60px;
+	margin-bottom: 26px;
+	padding-left: 20px;
+}
+
+#login1 #warn{
+	display:block;
+	margin-top:-18px;
+	margin-left:  40px;
+	font-size: 12px;
+	color: red;
+}
+#login2 #submit2{
+	margin: -10px 70px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5) ;
+	border: none;
+	color: #FFE6C4;
+	background-color: rgba(66,47,54,.8);
+}
+
+#input_code a{
+	text-decoration: none;
+	color: #6995C2;
+	border-left:1px dotted #ccc ;
+	/* display: inline-block; */
+	margin-left:-95px ;
+	
+}
+#login1 a{
+	position: absolute;
+	color: #4B4B4B;
+	left: 200px;
+	bottom: 65px;
+	font-size: 12px;
+}
+
+#login1 a:hover{
+	color: #3F3037;
+	text-decoration: underline;
+}
+
+#login_footer{
+	position: absolute;
+	display:  flex;
+	flex-direction: row;
+	bottom: 20px;
+	/* border: 1px solid black; */
+}
+#login_footer span{
+	margin: 15px 50px;
+	color: #3F3037;
+}
+
+#login_footer ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	
+}
+
+#login_footer ul li{
+	margin: 10px;
+}
+#login_footer ul i{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+#login_footer #icon1{
+	background: url(../img/qq.png);
+	background-size: 100% 100%;
+}
+#login_footer #icon2{
+	background: url(../img/wb.png);
+	background-size: 100% 100%;
+}
+
+#login_footer #icon3{
+	background: url(../img/wx.png);
+	background-size: 100% 100%;
+}
+
+#reg{
+	position: absolute;
+	bottom: 10px;
+	right: 30px;
+	font-size: 12px;
+}
+
+/* 注册提示 */
+#reg a{
+	color: #4B4B4B;
+}
+#reg a:hover{
+	color: #3F3037;
+	text-decoration: underline;
+}
